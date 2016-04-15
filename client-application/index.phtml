@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<?php
+if ($request->get('failed')) {
+    echo '<div style="color:red">Login failed</div>';
+}
+?>
+<ul>
+    <li><a href="/client-application/login.php">Login with oauth</a></li>
+</ul>
+</body>
+</html>

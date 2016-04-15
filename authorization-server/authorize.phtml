@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authorize</title>
+</head>
+<body>
+<h1>Application <?= $client->name ?> requests the following permissions:</h1>
+<ul>
+    <?php
+    foreach(explode(',', $request->get('scope')) as $scope) {
+        echo '<li>' . $scope . '</li>';
+    }
+    ?>
+</ul>
+<a href="<?= $redirectAccept ?>">Accept</a>
+<a href="<?= $redirectRefuse ?>">Refuse</a>
+</body>
+</html>

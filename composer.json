@@ -1,0 +1,14 @@
+{
+    "name": "laurenzonneveld/oauth-demo",
+    "description": "Oauth2 demo",
+    "require": {
+        "guzzlehttp/guzzle": "~6.2",
+        "symfony/http-foundation": "~3"
+    },
+    "authors": [
+        {
+            "name": "Lauren Zonneveld",
+            "email": "lauren.zonneveld@outlook.com"
+        }
+    ]
+}
